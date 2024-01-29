@@ -43,6 +43,7 @@ public class ComputerItem : PuzzleItem
                     if (GameManager.SelectedRam == GameManager.VM_Ram.Ram_1024MB)
                     {
                         desktopBckgDebianPassword.SetActive(true);
+                        GameManager.SecondPuzzleSolved = true;
                     }
                     else
                     {

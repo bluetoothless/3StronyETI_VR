@@ -22,7 +22,7 @@ public class LockerButtonItem : MonoBehaviour
     private void Update()
     {
         counter++;
-        Debug.Log(counter);
+        //Debug.Log(counter);
 
         switch (lockerNumber)
         {
@@ -120,7 +120,7 @@ public class LockerButtonItem : MonoBehaviour
         objectRenderer.material.color = Color.gray;
         GameManager.currentCombination2 += number;
 
-        if (GameManager.currentCombination2.Length == 4)
+        if (GameManager.currentCombination2.Length == 5)
         {
             if (GameManager.currentCombination2 == GameManager.code2)
             {

@@ -12,12 +12,21 @@ public class GameManager : MonoBehaviour
     public static VM_Ram SelectedRam;
     public static bool codedLocker1Opened = false;
     public static bool codedLocker2Opened = false;
-    public static string code1 = "1234";
+    public static string code1 = "2195";
     public static string code2 = "59138";
     public static string currentCombination1 = "";
     public static string currentCombination2 = "";
     public static bool resettingLockerColor1 = false;
     public static bool resettingLockerColor2 = false;
+
+    public static float MainTimerLength = 900; // in seconds; 900 s = 15 min
+    public static bool GameEnded = false;
+    public static float[] PuzzleSolveTimes = { 0.0f, 0.0f, 0.0f };
+
+    public static bool FirstPuzzleSolved = true;
+    public static bool SecondPuzzleSolved = false;
+    public static bool ThirdPuzzleSolved = false;
+    public static bool GameWon = false;
 
     void Awake()
     {
