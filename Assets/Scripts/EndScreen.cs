@@ -52,6 +52,11 @@ public class EndScreen : MonoBehaviour
 
     string DetermineFieldOfStudy()
     {
+        if (!GameManager.FirstPuzzleSolved && !GameManager.SecondPuzzleSolved && !GameManager.ThirdPuzzleSolved)
+        {
+            return "Jêzyk polski na UG";
+        }
+
         float minSolveTime = float.MaxValue;
         int puzzleIndex = -1;
 
@@ -60,6 +65,7 @@ public class EndScreen : MonoBehaviour
             float time = GameManager.PuzzleSolveTimes[i];
             if (time < minSolveTime && time != 0)
             {
+                
                 minSolveTime = time;
                 puzzleIndex = i;
             }

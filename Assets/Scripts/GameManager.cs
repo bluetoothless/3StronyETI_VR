@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     public static bool GameEnded = false;
     public static float[] PuzzleSolveTimes = { 0.0f, 0.0f, 0.0f };
 
-    public static bool FirstPuzzleSolved = true;
+    public static bool FirstPuzzleSolved = false;
     public static bool SecondPuzzleSolved = false;
     public static bool ThirdPuzzleSolved = false;
     public static bool GameWon = false;

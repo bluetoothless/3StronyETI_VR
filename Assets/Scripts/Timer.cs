@@ -26,12 +26,12 @@ public class Timer : MonoBehaviour
                 UpdateTimer(TimeLeft);
                 CheckPuzzleProgres();
             }
-            /*  // early ending - for testing
-            if (TimeLeft < 840)
+              // early ending - for testing
+            /*if (TimeLeft < 895)
             {
                 GameManager.GameEnded = true;
-            }
-            */
+            }*/
+            
         }
         else
         {
