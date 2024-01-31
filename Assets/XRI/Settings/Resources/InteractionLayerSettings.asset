@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Dipol
+  - Reflektory
+  - Elementy_konstrukcyjne
+  - Direktory
+  - Puszka_antenowa
   - 
   - 
   - 
