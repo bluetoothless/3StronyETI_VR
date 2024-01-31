@@ -44,6 +44,7 @@ public class ComputerItem : PuzzleItem
                     {
                         desktopBckgDebianPassword.SetActive(true);
                         GameManager.SecondPuzzleSolved = true;
+                        GameManager.GameEnded = true;
                     }
                     else
                     {
