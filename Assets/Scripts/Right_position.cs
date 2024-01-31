@@ -7,6 +7,7 @@ public class InteractableObject : MonoBehaviour
 {
     // Add variables for the correct position and a flag to track if the object is in the correct position
     public Vector3 correctPosition;
+    public GameManager.AntennaPiece AntennaPieceNumber;
     private bool isCorrectPosition = false;
 
     // Update is called once per frame
@@ -16,6 +17,7 @@ public class InteractableObject : MonoBehaviour
         if (Vector3.Distance(transform.position, correctPosition) < 0.1f)
         {
             isCorrectPosition = true;
+            GameManager.correctAntennaPiecePositions[(int)AntennaPieceNumber] = true;
         }
         else
         {

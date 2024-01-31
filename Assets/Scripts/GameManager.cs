@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
     public static bool ThirdPuzzleSolved = false;
     public static bool GameWon = false;
 
+    public static bool[] correctAntennaPiecePositions = { false, false, false, false, false };
+
     void Awake()
     {
         SelectedImage = VM_Image.Ubuntu;
@@ -66,5 +68,14 @@ public class GameManager : MonoBehaviour
         Ram_2048MB, 
         Ram_4096MB, 
         Ram_8192MB
+    }
+
+    public enum AntennaPiece
+    {
+        Dipol,
+        Direktory,
+        Puszka,
+        Elementy,
+        Reflektory
     }
 }
